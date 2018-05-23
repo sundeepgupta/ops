@@ -1,6 +1,4 @@
 # Aliases
-# Personal
-alias site5='ssh enhancet@209.15.238.85'
 
 # Git
 alias grh='git reset --hard'
@@ -17,29 +15,6 @@ alias gc='git commit'
 # Bash
 alias bp='atom ~/code/ops/bash_profile'
 alias sbp='. ~/.bash_profile'
-
-# Heroku
-alias h='heroku'
-
-# DOSE
-alias md='mongo deedevelopment'
-alias ms='mongo mongodb://heroku_g4jvr5bz:p47fsiatkj29d2at1tb5f52t0h@ds019054.mlab.com:19054/heroku_g4jvr5bz'
-alias mp='mongo mongodb://heroku_lx9qq94m:enr2s55i02snmlesrr3nca6pks@ds161315.mlab.com:61315/heroku_lx9qq94m'
-alias ng='ngrok http 3000'
-alias lc='loopback-console'
-alias hls='heroku logs --tail -r staging'
-alias hlp='heroku logs --tail -r production'
-alias gpsd='g push -f staging dev:master'
-
-# Node
-alias ni='node-inspector --no-preload --save-live-edit'
-alias nm='nodemon .'
-alias nmi='nodemon --inspect .'
-alias av='NODE_ENV=test ava -vw'
-
-# npm
-alias npme='PATH=$(npm bin):$PATH' #http://stackoverflow.com/questions/9679932/how-to-use-package-installed-locally-in-node-modules
-
 
 # Prompt
 # https://gist.github.com/31967
@@ -150,6 +125,3 @@ test -f ~/.git-completion.bash && . $_
 
 # Ignore dupes in history: http://askubuntu.com/questions/15926/how-to-avoid-duplicate-entries-in-bash-history
 export HISTCONTROL=ignoreboth:erasedups
-
-
-if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
